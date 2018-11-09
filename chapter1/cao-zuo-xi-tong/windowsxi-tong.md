@@ -47,7 +47,18 @@ gpedit.msc                                      # 输入命令，调出 本地�
 
 ### 3.  禁用系统 Telnet 服务
 
->
+> 加固方法：Telnet远程管理服务，身份鉴别信息明文传输，如系统安装并且开启了 Telnet 服务，请务必禁用。
+
+
+
+```
+Win + r                                           # 调出运行
+services.msc                                      # 输入命令，调出 服务 对话框查看，如下
+```
+
+![](/assets/telnet.png)
+
+![](/assets/禁用telnet.png)
 
 
 
