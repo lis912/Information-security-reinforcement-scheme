@@ -13,7 +13,7 @@ Win + r                                         # 调出运行
 rundll32 netplwiz.dll UsersRunDll               # 输入命令，调出如下对话框，勾选，应用
 ```
 
-                                         ![](/assets/勾选“用户名+密码”.png)
+![](/assets/勾选“用户名+密码”.png)
 
 ### 2. 完善系统口令策略，登录失败策略
 
