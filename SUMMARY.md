@@ -7,7 +7,7 @@
     * [Centos/Red-Hat](chapter1/cao-zuo-xi-tong/linux.md)
     * [Terminal PC](chapter1/cao-zuo-xi-tong/terminal-pc.md)
     * [HP-UX](chapter1/cao-zuo-xi-tong/hp-ux.md)
-    * IBM-AIX
+    * [IBM-AIX](chapter1/cao-zuo-xi-tong/ibm-aix.md)
   * [数据库](chapter1/shu-ju-ku.md)
     * [Oracle](chapter1/shu-ju-ku/oracle.md)
     * Mysql
