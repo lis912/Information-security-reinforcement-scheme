@@ -9,7 +9,7 @@
 > 加固方法：
 
 ```
-Win + r                                         # 调出运行
+Win + r                                         # 调出运行窗口
 rundll32 netplwiz.dll UsersRunDll               # 输入命令，调出如下对话框，勾选，应用
 ```
 
@@ -20,7 +20,7 @@ rundll32 netplwiz.dll UsersRunDll               # 输入命令，调出如下对
 > 加固方法：
 
 ```
-Win + r                                         # 调出运行
+Win + r                                         # 调出运行窗口
 gpedit.msc                                      # 输入命令，调出 本地组策略编辑器 对话框
 计算机配置 -> Windows 设置 -> 安全设置 -> 账户策略 -> 密码策略   # 依此路径打开如下密码策略配置项
 
@@ -49,16 +49,27 @@ gpedit.msc                                      # 输入命令，调出 本地�
 
 > 加固方法：Telnet远程管理服务，身份鉴别信息明文传输，如系统安装并且开启了 Telnet 服务，请务必禁用。
 
-
-
 ```
-Win + r                                           # 调出运行
+Win + r                                           # 调出运行窗口
 services.msc                                      # 输入命令，调出 服务 对话框查看，如下
 ```
 
 ![](/assets/telnet.png)
 
 ![](/assets/禁用telnet.png)
+
+---
+
+# 访问控制
+
+## 1. 禁用或关闭不必要的系统默认共享
+
+> 加固方法：禁用默认共享
+
+```
+Win + r                                           # 调出运行窗口
+services.msc                                      # 输入命令，调出 服务 对话框查看，如下
+```
 
 
 
