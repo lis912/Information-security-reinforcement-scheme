@@ -67,9 +67,26 @@ services.msc                                      # 输入命令，调出 服务
 > 加固方法：禁用默认共享
 
 ```
-Win + r                                           # 调出运行窗口
-services.msc                                      # 输入命令，调出 服务 对话框查看，如下
+Win + r                                      # 调出运行窗口
+regedit                                      # 输入命令，调出 “注册表编辑器” 窗口
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lanmanserver\parameters]      # 依次展开注册表路径
+添加REG_DWORD类型值项AutoShareServer，并赋值为0，如下：
 ```
+
+![](/assets/禁用默认共享.png)
+
+### 2.Administrator
+
+> 加固方法：
+
+```
+Win + r                                            # 调出运行窗口
+lusrmgr.msc                                        # 输入命令，调出 用户用户组管理窗口                               
+```
+
+> 重命名Administrator账户，禁用Guest账户,如下
+
+![](/assets/重命名admin.png)
 
 
 
