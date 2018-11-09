@@ -1,7 +1,7 @@
 # 本方案以 Windows Server 2008 R2 操作系统例：
 
 
----
+------
 
 
 # 身份鉴别
@@ -15,7 +15,7 @@ Win + r                                         # 调出运行
 rundll32 netplwiz.dll UsersRunDll               # 输入命令，调出如下对话框，勾选，应用
 ```
 
-<div align=center>![](/assets/勾选“用户名+密码”.png)
+![用户账户对话框](/assets/勾选“用户名+密码”.png)
 
 
 
