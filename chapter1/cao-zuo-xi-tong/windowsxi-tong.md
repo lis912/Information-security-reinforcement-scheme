@@ -137,9 +137,13 @@ gpedit.msc                                      # 输入命令，调出"本地�
 
 > 补丁安装可采用离线安装的方式
 
-访问微软补丁目录页面：[http://www.catalog.update.microsoft.com](http://www.catalog.update.microsoft.com) 搜索相关系统版本的补丁：
+* 访问微软补丁目录页面：[http://www.catalog.update.microsoft.com](http://www.catalog.update.microsoft.com) 搜索相关系统版本的补丁：
 
 ![](/assets/kb.png)
+
+* 根据漏洞扫描结果下载相关的安全补丁程序：![](/assets/kb2.png)
+
+
 
 待补充.......
 
@@ -147,11 +151,31 @@ gpedit.msc                                      # 输入命令，调出"本地�
 
 > 打开系统防火墙，新建入站，出站规则，在主机层面过滤135 139 445 等高危端口。
 
-* 禁用445端口实例：
+* 禁用445端口示例：
 
 ![](/assets/445入站过滤.png)![](/assets/445出站阻止.png)
 
 ---
 
 
+
+# 恶意代码防范
+
+> 应统一部署专业的企业版杀毒软件，统一升级及时更新病毒库。
+
+
+
+ 
+
+---
+
+
+
+# 资源控制
+
+### 1. 设置屏幕超时锁定
+
+> 建议配置屏幕超时锁定不低于15分钟
+
+![](/assets/屏幕保护.png)
 
