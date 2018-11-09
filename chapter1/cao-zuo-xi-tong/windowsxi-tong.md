@@ -25,7 +25,7 @@ rundll32 netplwiz.dll UsersRunDll               # 输入命令，调出如下对
 ```
 Win + r                                         # 调出运行
 gpedit.msc                                      # 输入命令，调出 本地组策略编辑器 对话框
-
+计算机配置 -> Windows 设置 -> 安全设置 -> 账户策略 -> 密码策略   # 依此路径打开，配置 密码策略 
 ```
 
 
