@@ -15,7 +15,7 @@ Win + r                                         # 调出运行
 rundll32 netplwiz.dll UsersRunDll               # 输入命令，调出如下对话框，勾选，应用
 ```
 
-![用户账户对话框](/assets/勾选“用户名+密码”.png)
+![](/assets/勾选“用户名+密码”.png)
 
 
 
