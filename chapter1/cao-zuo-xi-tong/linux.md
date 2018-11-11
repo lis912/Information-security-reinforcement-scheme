@@ -83,17 +83,9 @@ auth        required      pam_tally2.so even_deny_root deny=5 unlock_time=600 ro
 | unlock\_time | 600 | 普通账户600秒解锁 |
 | root\_unlock\_time | 1800 | root 账户 1800秒解锁 |
 
-
-
-
-
 ---
 
-
-
 # 安全审计
-
-
 
 
 

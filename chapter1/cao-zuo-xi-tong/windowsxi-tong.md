@@ -1,6 +1,4 @@
-# Windows Server 2008 R2 操作系统示例：
-
-
+# 以 Windows Server 2008 R2 操作系统示例：
 
 ---
 
