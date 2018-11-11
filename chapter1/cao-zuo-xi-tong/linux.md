@@ -71,10 +71,6 @@ password    requisite     pam_cracklib.so try_first_pass difok=3 ucredit=-1 lcre
 | ocredit | -1 | 密码中至少有1位特殊字符 |
 | remember | 8 | 最近8次使用过的旧密码无法重用 |
 
-
-
-
-
 ```
 # 登录失败策略
 auth        required      pam_tally2.so even_deny_root deny=5 unlock_time=600 root_unlock_time=1800
@@ -86,6 +82,18 @@ auth        required      pam_tally2.so even_deny_root deny=5 unlock_time=600 ro
 | deny | 5 | 登录失败5次锁定账户 |
 | unlock\_time | 600 | 普通账户600秒解锁 |
 | root\_unlock\_time | 1800 | root 账户 1800秒解锁 |
+
+
+
+
+
+---
+
+
+
+# 安全审计
+
+
 
 
 
