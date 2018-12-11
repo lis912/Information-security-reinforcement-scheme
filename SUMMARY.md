@@ -7,6 +7,7 @@
     * [Centos/Red-Hat](chapter1/cao-zuo-xi-tong/linux.md)
   * [数据库](chapter1/shu-ju-ku.md)
     * [Oracle](chapter1/shu-ju-ku/oracle.md)
+      * [Oracle数据库补丁](chapter1/shu-ju-ku/oracle/oracleshu-ju-ku-bu-ding.md)
     * Mysql
     * MSsql
   * [应用系统](chapter1/ying-yong-xi-tong.md)
