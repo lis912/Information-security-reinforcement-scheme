@@ -26,6 +26,8 @@ PASS_WARN_AGE    7     # 口令有效期警告
 
 > 该配置修改保存后立即生效, 但只对修改后创建的账户生效。
 
+### 
+
 ### 2. 配置系统口令复杂度策略,登录失败策略
 
 * 打开 /etc/pam.d/system-auth 配置文件,  添加或配置 pam\_cracklib.so 模块下的口令复杂度配置参数, 及 pam\_tally2.so 模块下的登录失败处理配置参数.修改如下:
@@ -83,7 +85,37 @@ auth        required      pam_tally2.so even_deny_root deny=5 unlock_time=600 ro
 | unlock\_time | 600 | 普通账户600秒解锁 |
 | root\_unlock\_time | 1800 | root 账户 1800秒解锁 |
 
----
+### 
+
+### 3.清除多余的系统账户
+
+* linux系统下lp、adm、sync、shutdown、halt、news、operator、gopher等为多余的虚拟系统账户，在不影响业务运行的情况下应将其删除。实际情况下打开/etc/passwd文件将这些账户注释即可，如下：
+
+
+
+```
+[root@localhost ~]# vi /etc/passwd
+
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+#adm:x:3:4:adm:/var/adm:/sbin/nologin
+#lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+#sync:x:5:0:sync:/sbin:/bin/sync
+#shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+#halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+#operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+polkitd:x:999:998:User for polkitd:/:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+chrony:x:998:996::/var/lib/chrony:/sbin/nologin
+```
 
 # 安全审计
 
